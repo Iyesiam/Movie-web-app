@@ -1,0 +1,339 @@
+/* Global Styles */
+
+/* Reset default margin and padding for the body and list */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Define a color palette */
+:root {
+    --primary-color: #ef6a27;
+    /* Main color for links and accents */
+    --secondary-color: #333;
+    /* Secondary color for backgrounds */
+    --text-color: #333;
+    /* Text color for content */
+    --background-color: #f0f0f0;
+    /* Background color for the whole page */
+}
+
+/* Style the header */
+.header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    /* Add display: flex; to make it a flex container */
+    justify-content: center;
+    /* Center-align its children horizontally */
+    flex-direction: column;
+    /* Stack children vertically */
+}
+
+/* Style the navigation menu */
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the navigation menu items */
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style the navigation menu links */
+.nav-menu li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+/* Apply background color to the body */
+body {
+    background-color: var(--background-color);
+}
+
+/* Movie cards container */
+.movie-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Individual movie card */
+.movie-card {
+    width: calc(20% - 20px);
+    /* Adjust the card width as needed */
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 10px 20px;
+    /* Add margin for spacing between cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    /* Add a smooth transition effect on hover */
+}
+
+/* Movie card hover effect */
+.movie-card:hover {
+    transform: scale(1.05);
+    /* Scale up the card slightly on hover */
+}
+
+/* Movie poster */
+.movie-card img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+/* Movie title */
+/* Remove underlines from movie titles (links) */
+.movie-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+}
+
+
+/* Style the anchor tags (added styles for anchor tags) */
+.movie-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    /* Inherit text color from parent */
+}
+
+/* Add some margin between columns */
+.column + .column {
+    margin-left: 20px;
+}
+
+/* Style the search input field */
+.search {
+    border: 1px solid rgb(116, 178, 233);
+    border-radius: 5px;
+    height: 20px;
+    width: 50%;
+    padding: 12px 10px; /* Adjust padding for better alignment with the button */
+    outline: 0;
+    background-color: #f5f5f5;
+}
+
+/* Style the search button */
+.search-button {
+    border: none;
+    background-color: #f4f7fa; /* Set button background color */
+    color: #1a1919; /* Set button text color */
+    border-radius: 5px;
+    padding: 12px 20px; /* Adjust padding for button size */
+    cursor: pointer;
+}
+
+/* Adjust button hover effect */
+.search-button:hover {
+    background-color: #b3d4f5; /* Change background color on hover */
+}
+
+/* Movie-Details Page Styles */
+/* Movie details container */
+.movie-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Display children horizontally */
+    align-items: center; /* Center-align vertically */
+}
+
+/* Movie poster */
+.movie-poster {
+    max-width: 40%; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Add space between poster and description */
+}
+
+/* Movie title */
+.movie-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Movie description */
+.movie-description {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Download button */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Back button */
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Contact Us Page Styles */
+/* Content section */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Contact form styles */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Footer section */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Define a color palette */
+        :root {
+            --primary-color: #ef6a27;
+            /* Main color for links and accents */
+            --secondary-color: #333;
+            /* Secondary color for backgrounds */
+            --text-color: #333;
+            /* Text color for content */
+            --background-color: #f0f0f0;
+            /* Background color for the whole page */
+        }
+
+        /* Horizontal table container */
+        .horizontal-table {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Column styles */
+        .column {
+            flex: 1;
+        }
+
+        /* Link style */
+        .link {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Action button style */
+        .action-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Add some margin between columns */
+        .column + .column {
+            margin-left: 20px;
+        }
+
+        /* Global Styles */
+
+/* ... (your existing styles) ... */
+
+/* Media Query for Screens Smaller than 600px (Mobile) */
+@media (max-width: 600px) {
+    /* Style the navigation menu for mobile */
+    .nav-menu li {
+        display: block;
+        margin-right: 0;
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+
+    /* Style the movie cards for mobile */
+    .movie-card {
+        width: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+
+    /* Style the search input and button for mobile */
+    .search {
+        width: 70%; /* Adjust the width for better mobile layout */
+    }
+
+    .search-button {
+        margin-left: 2px;
+    }
+}
+
+/* Media Query for Screens Larger than 1200px (Desktop) */
+@media (min-width: 1200px) {
+    /* Additional styles for larger screens if needed */
+}
+
+   
