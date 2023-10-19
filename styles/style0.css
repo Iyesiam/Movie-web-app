@@ -306,43 +306,9 @@ form button {
         /* Global Styles */
 
 /* ... (your existing styles) ... */
-
-/* Media Query for Screens Smaller than 600px (Mobile) */
-@media (max-width: 600px) {
-    /* Style the navigation menu for mobile */
-    .nav-menu li {
-        margin-right: 0;
-        font-size: 16px; /* Adjust font size for mobile */
-    }
-
-    /* Style the movie cards for mobile */
-    .movie-card {
-        width: calc(50% - 20px); /* Two columns on smaller screens */
-    }
-
-    /* Style the search input and button for mobile */
-    .search {
-        width: 70%; /* Adjust the width for better mobile layout */
-    }
-
-    .search-button {
-        margin-left: 2px;
-    }
-}
-/* Media Query for Screens Larger than 1200px (Desktop) */
-@media (min-width: 1200px) {
-    /* Additional styles for larger screens if needed */
-    .nav-menu li {
-        margin-right: 20px;
-    }
-
-    .link-text {
-        margin-left: 10px;
-    }
-}
-
 /* Media Query for Screens Smaller than 768px (Mobile) */
 @media (max-width: 768px) {
+    /* Style the navigation menu for mobile */
     .nav-menu {
         text-align: center;
     }
@@ -351,25 +317,40 @@ form button {
         display: block;
         margin: 10px 0;
     }
-}
 
-/* Media Query for Screens Smaller than 768px (Mobile) */
-@media (max-width: 768px) {
-    .movie-cards {
-        flex-direction: column;
+    .nav-menu li a {
+        display: flex;
         align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .nav-menu li .link-icon {
+        margin-right: 5px;
+    }
+
+    /* Style the movie cards for mobile */
+    .movie-cards {
+        padding: 10px;
     }
 
     .movie-card {
-        width: 80%;
+        width: calc(50% - 10px);
+        margin: 0 5px 10px;
+    }
+
+    /* Style the search input and button for mobile */
+    .search {
+        width: 70%;
+    }
+
+    .search-button {
+        margin: 10px auto;
+        display: block;
     }
 }
 
-
-
-/* Style the link text in the navigation menu */
-.link-text {
-    margin-left: 10px; /* Adjust the margin as needed */
+/* Media Query for Screens Larger than 1200px (Desktop) */
+@media (min-width: 1200px) {
+    /* Additional styles for larger screens if needed */
 }
-
-   
