@@ -1,0 +1,90 @@
+/* Importing Google font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically and horizontally */
+    background: #1D1E23;
+    height: 100vh;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default paddings */
+    position: relative;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+h1 span {
+    color: #ed7c53;
+    position: relative;
+}
+
+h1 span::before {
+    content: "";
+    height: 20px; /* Smaller height for the line */
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #ed7c53;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+h1 span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
+
+nav {
+    width: 40%; /* Increased the width to 40% to fit "Contact Us" */
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #ee6b53; /* Adjusted the color */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    color: #efbf57; /* Change color on hover */
+}
+
+nav label i {
+    margin-right: 2px; /* Smaller margin for the icon */
+    font-size: 16px; /* Smaller icon size */
+}
+
+nav .active a {
+    color: #fff; /* Style for the active link */
+}
